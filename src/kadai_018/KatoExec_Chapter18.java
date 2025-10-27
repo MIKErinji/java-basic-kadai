@@ -12,9 +12,9 @@ public class KatoExec_Chapter18 {
 		KatoIchro.setGivenName("一郎");
 		KatoHanako.setGivenName("花子");
 		
-		KatoTaro.commonIntroduce();
-		KatoIchro.commonIntroduce();
-		KatoHanako.commonIntroduce();
+		KatoTaro.execIntroduce();
+		KatoIchro.execIntroduce();
+		KatoHanako.execIntroduce();
 		
 		
 
