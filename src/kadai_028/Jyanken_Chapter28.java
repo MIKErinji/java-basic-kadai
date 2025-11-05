@@ -55,11 +55,11 @@ public class Jyanken_Chapter28 {
 		System.out.println("自分の手は" + myHand);
 		System.out.println("対戦相手の手は" + pcHand);
 		
-		if(myHand == pcHand) {
+		if(myHand.equals(pcHand)) {
 			System.out.println("あいこです");
-		}else if((myHand == "グー" && pcHand == "チョキ") || (myHand == "チョキ" && pcHand == "パー") || (myHand == "パー" && pcHand == "グー")) {
+		}else if((myHand.equals(result.get("r")) && (pcHand.equals(result.get("s"))) || (myHand.equals(result.get("s"))) && (pcHand.equals(result.get("p"))) || (myHand.equals(result.get("p"))) && (pcHand.equals(result.get("r"))))) {
 			System.out.println("自分の勝ちです");
-		}else if((myHand == "グー" && pcHand == "パー") || (myHand == "チョキ" && pcHand == "グー") || (myHand == "パー" && pcHand == "チョキ")) {
+		} else if((myHand.equals(result.get("r")) && (pcHand.equals(result.get("p"))) || (myHand.equals(result.get("s"))) && (pcHand.equals(result.get("r"))) || (myHand.equals(result.get("p"))) && (pcHand.equals(result.get("s"))))) {
 			System.out.println("自分の負けです");
 		}
 	}
